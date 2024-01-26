@@ -32,6 +32,7 @@ public class PlayerMovement: MonoBehaviour
                 targetPos.x += input.y;
 
                 StartCoroutine(Move(targetPos));
+                Debug.Log("It worksss");
             }
         }
 
