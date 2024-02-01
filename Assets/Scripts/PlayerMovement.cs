@@ -29,15 +29,15 @@ public class PlayerMovement: MonoBehaviour
             {
                 var targetPos = transform.position;
                 targetPos.x += input.x;
-                targetPos.x += input.y;
+                targetPos.y += input.y;
 
-                StartCoroutine(Move(targetPos));
-                Debug.Log("It worksss");
+          
             }
         }
 
         
     }
+   // https://youtu.be/gKauseRHFRg?si=KAlv99ntLl08hq6M&t=969
 
     IEnumerator Move(Vector3 targetPos)
     {
